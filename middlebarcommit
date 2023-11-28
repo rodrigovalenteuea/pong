@@ -1,0 +1,14 @@
+  GNU nano 6.2                       New Buffer *                               
+middle_bar = pygame.image.load("assets/middle_bar.png")
+middle_bar_x = 640
+middle_bar_y = 1
+middle_bar_center = ( #align the middle bar on the center of screen more precis>
+    (screen.get_width()/2)-middle_bar.get_width()
+)
+
+#essa parte fica junto dos blit, tá ligado!
+for cont in range(1,20):
+        screen.blit(middle_bar,(middle_bar_center, middle_bar_y*cont))
+        middle_bar_y = 40
+
+
